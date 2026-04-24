@@ -22,4 +22,8 @@ app.get('/', (req, res) => {
   `);
 });
 
+app.get('/data', (req, res) => {
+  res.json(latest);
+});
+
 app.listen(process.env.PORT || 3000);
