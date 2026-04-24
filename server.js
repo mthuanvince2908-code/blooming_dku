@@ -13,9 +13,9 @@ app.get('/update', (req, res) => {
 
 app.get('/', (req, res) => {
   res.send(`
-    <h1>Sensor Dashboard</h1>
-    <p>Sensor 1: ${latest.s1}</p >
-    <p>Sensor 2: ${latest.s2}</p >
+    <h1>Blooming DKU</h1>
+    <p>Noise: ${latest.s1}</p >
+    <p>Light: ${latest.s2}</p >
     <script>
       setTimeout(() => location.reload(), 2000);
     </script>
